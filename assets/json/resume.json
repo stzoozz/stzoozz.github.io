@@ -1,16 +1,15 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Shuting Zhao",
+    "label": "Student, Software Engineer Intern",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "shuting at outlook dot com",
+    "url": "https://stzoozz.github.io",
+    "summary": "M.S. ECE at UCSD, B.S. CS at BJTU, interested in AI Agent Systems, Go Microservices and LLMs.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
+      "address": "",
+      "postalCode": "",
+      "city": "La Jolla",
       "countryCode": "US",
       "region": "California"
     },
@@ -24,25 +23,38 @@
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
+      "name": "Translation Team, <i class=\"fa-brands fa-meta\" style=\"color: #2470f5;\"></i> Meta Inc.",
+      "position": "Software Engineer Intern, ML",
+      "url": "https://ai.meta.com",
+      "startDate": "2025-06-23",
+      "endDate": "2025-09-12",
+      "summary": "",
+      "highlights": []
+    },
+    {
+      "name": "AI Lab, <img src=\"https://avatars.githubusercontent.com/u/130881854?s=200&v=4\" width=\"16\" height=\"16\" style=\"margin: 0 4px;\">Manifold Creative Global",
+      "position": "Industry Research Intern",
+      "startDate": "2024-06-30",
+      "endDate": "2024-12-30",
+      "summary": "work on knowledge graph based RAG (retrieval augmented generation) system, check our <a href=\"https://github.com/0xMCG/sys2path\">blog</a>."
+    },
+    {
+      "name": "Mpilot - AEB Team, <img src=\"https://www.momenta.cn/images/Momenta_Logo.png\" width=\"\" height=\"13\" style=\"margin: 0 4px;\">",
+      "position": "R&D Intern",
+      "startDate": "2024-03-01",
+      "endDate": "2024-06-28",
+      "summary": "work on autonomous emergency braking (AEB) system and related tool chains, check out the <a href=\"https://www.youtube.com/watch?v=Q3pGeK9UyVs\">video</a> for how it works."
     }
   ],
   "volunteer": [
     {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
+      "organization": "The 2nd National Youth Games of China",
+      "location": "Shanxi, China",
+      "position": "Event Volunteer",
+      "url": "https://www.sport.gov.cn/n4/n15161/n15165/index.html",
+      "startDate": "2019-08-08",
+      "endDate": "2015-08-18",
+      "summary": "In charge of event scheduling and coordination for Chinese-style wrestling."
     }
   ],
   "education": [

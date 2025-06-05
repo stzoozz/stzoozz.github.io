@@ -1,0 +1,52 @@
+<div class="experience">
+  {% if site.experience != blank %}
+    {% assign experience_size = site.experience | size %}
+    <div
+      class="table-responsive"
+      {% if include.limit and page.experience.scrollable and experience_size > 3 %}
+        style="max-height: 60vw"
+      {% endif %}
+    >
+      <table class="table table-sm table-borderless">
+        {% assign experiences = site.experience | reverse %}
+        {% if include.limit and page.experience.limit %}
+          {% assign experience_limit = page.experience.limit %}
+        {% else %}
+          {% assign experience_limit = experience_size %}
+        {% endif %}
+        {% for item in experiences limit: experience_limit %}
+          <tr>
+            <th scope="row" style="width: 20%">
+              {% if item.duration %}
+                {% assign duration_parts = item.duration | split: ' - ' %}
+                {% if duration_parts.size == 2 %}
+                  {{ duration_parts[0] }}<br>{{ duration_parts[1] }}
+                {% else %}
+                  {{ item.duration }}
+                {% endif %}
+              {% else %}
+                {{ item.date | date: '%b %Y' }}
+              {% endif %}
+            </th>
+            <td>
+              {% if item.inline %}
+                {% if item.position and item.company %}
+                  <strong>{{ item.position }}</strong> at {{ item.company }}
+                  {% if item.location %}
+                    <span class="text-muted">| {{ item.location }}</span>
+                  {% endif %}
+                  <br>
+                {% endif %}
+                {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+              {% else %}
+                <a class="experience-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+              {% endif %}
+            </td>
+          </tr>
+        {% endfor %}
+      </table>
+    </div>
+  {% else %}
+    <p>No experience so far...</p>
+  {% endif %}
+</div> 
